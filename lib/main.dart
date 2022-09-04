@@ -1,7 +1,8 @@
-import 'package:bmi_calculator/screen/homePage.dart';
-import 'package:bmi_calculator/screen/homeScreen.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+import 'screen/homeScreen.dart';
 
 void main() => runApp(MyApp());
 

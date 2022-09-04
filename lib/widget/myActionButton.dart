@@ -1,25 +1,23 @@
-
 import 'package:flutter/material.dart';
 
 class MyActionButton extends StatelessWidget {
   const MyActionButton({
     Key? key,
-    required this.height,
     required this.icon,
     required this.onTap,
   }) : super(key: key);
 
-  final double height;
   final IconData icon;
   final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return InkWell(
       onTap: onTap,
       child: Container(
-        width: height * 0.07,
-        height: height * 0.07,
+        width: size.height * 0.06,
+        height: size.height * 0.06,
         decoration: BoxDecoration(
           color: Color(0xFF4D4F5E),
           shape: BoxShape.circle,
@@ -27,7 +25,7 @@ class MyActionButton extends StatelessWidget {
         child: Icon(
           icon,
           color: Color(0xFFfdffff),
-          size: height * 0.06,
+          size: size.height * 0.05,
         ),
       ),
     );
